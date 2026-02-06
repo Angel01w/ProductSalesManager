@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using ProductSalesManager.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
