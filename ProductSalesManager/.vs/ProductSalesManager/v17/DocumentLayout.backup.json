@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\controllers\\saleitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:controllers\\saleitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,19 +39,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T19:11:41.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-06T19:11:39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SaleItemController.cs",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\SaleItemController.cs",
               "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleItemController.cs",
               "RelativeToolTip": "Controllers\\SaleItemController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwHcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T14:06:27.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -51,12 +85,11 @@
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAIwBIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:05:56.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T14:05:56.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CostumerController.cs",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\CostumerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CostumerController.cs",
@@ -64,12 +97,11 @@
               "RelativeToolTip": "Controllers\\CostumerController.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwE8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T13:57:37.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T13:57:37.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SaleController.cs",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleController.cs",
               "RelativeDocumentMoniker": "Controllers\\SaleController.cs",
@@ -77,8 +109,7 @@
               "RelativeToolTip": "Controllers\\SaleController.cs",
               "ViewState": "AgIAAJsAAAAAAAAAAAAqwHMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T13:55:29.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T13:55:29.623Z"
             }
           ]
         }

@@ -137,3 +137,5 @@ C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\refint\ProductS
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\ProductSalesManager.pdb
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\ProductSalesManager.genruntimeconfig.cache
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\ref\ProductSalesManager.dll
+C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\vue-project\jsconfig.json
+C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\vue-project\package.json
