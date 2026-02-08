@@ -1,95 +1,182 @@
-<script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
+<!-- src/components/TheWelcome.vue -->
+<template>
+    <div class="bg-light min-vh-100">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container py-2">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="brand-dot"></span>
+                    <div>
+                        <div class="fw-bold lh-1">ProductSalesManager</div>
+                        <div class="text-muted small lh-1">Panel administrativo</div>
+                    </div>
+                </div>
 
-const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge text-bg-primary">Vue 3</span>
+                    <span class="badge text-bg-dark">.NET API</span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container py-4">
+            <!-- Cards -->
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-md-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="text-muted small">Módulo</div>
+                                    <div class="fw-bold">Clientes</div>
+                                </div>
+                                <div class="pill">CRUD</div>
+                            </div>
+                            <div class="mt-3 text-muted small">Crear, editar y eliminar clientes.</div>
+                            <button class="btn btn-primary w-100 mt-3" @click="tab = 'clientes'">
+                                Ir a Clientes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="text-muted small">Módulo</div>
+                                    <div class="fw-bold">Productos</div>
+                                </div>
+                                <div class="pill">CRUD</div>
+                            </div>
+                            <div class="mt-3 text-muted small">Administrar productos (precio y stock).</div>
+                            <button class="btn btn-dark w-100 mt-3" @click="tab = 'productos'">
+                                Ir a Productos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="text-muted small">Módulo</div>
+                                    <div class="fw-bold">Ventas</div>
+                                </div>
+                                <div class="pill">CRUD</div>
+                            </div>
+                            <div class="mt-3 text-muted small">Registrar ventas y ver historial.</div>
+                            <button class="btn btn-success w-100 mt-3" @click="tab = 'ventas'">
+                                Ir a Ventas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="text-muted small">Módulo</div>
+                                    <div class="fw-bold">SaleItems</div>
+                                </div>
+                                <div class="pill">CRUD</div>
+                            </div>
+                            <div class="mt-3 text-muted small">Detalle de venta (ítems por venta).</div>
+                            <button class="btn btn-info text-white w-100 mt-3" @click="tab = 'saleitems'">
+                                Ir a SaleItems
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2 mb-3">
+                        <div>
+                            <h5 class="mb-1">Subtareas</h5>
+                            <div class="text-muted small">Selecciona el módulo a gestionar</div>
+                        </div>
+
+                        <div class="btn-group" role="group" aria-label="Tabs">
+                            <button type="button"
+                                    class="btn"
+                                    :class="tab === 'clientes' ? 'btn-primary' : 'btn-outline-primary'"
+                                    @click="tab = 'clientes'">
+                                Clientes
+                            </button>
+
+                            <button type="button"
+                                    class="btn"
+                                    :class="tab === 'productos' ? 'btn-dark' : 'btn-outline-dark'"
+                                    @click="tab = 'productos'">
+                                Productos
+                            </button>
+
+                            <button type="button"
+                                    class="btn"
+                                    :class="tab === 'ventas' ? 'btn-success' : 'btn-outline-success'"
+                                    @click="tab = 'ventas'">
+                                Ventas
+                            </button>
+
+                            <button type="button"
+                                    class="btn"
+                                    :class="tab === 'saleitems' ? 'btn-info text-white' : 'btn-outline-info'"
+                                    @click="tab = 'saleitems'">
+                                SaleItems
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Render -->
+                    <CustomersCrud v-if="tab === 'clientes'" />
+                    <ProductsCrud v-else-if="tab === 'productos'" />
+                    <SaleCrud v-else-if="tab === 'ventas'" />
+                    <SaleItemCrud v-else />
+                </div>
+            </div>
+
+            <div class="text-center text-muted small mt-3">
+                © {{ new Date().getFullYear() }} ProductSalesManager
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+    import { ref } from "vue";
+
+    // ✅ Ajusta estos imports a los nombres reales de tus archivos:
+    import CustomersCrud from "../components/Customer.vue";
+    import ProductsCrud from "../components/Product.vue";
+    import SaleCrud from "../components/Sale.vue";
+    import SaleItemCrud from "../components/SaleItem.vue";
+
+    const tab = ref("clientes");
 </script>
 
-<template>
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Documentation</template>
+<style scoped>
+    .brand-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: #0d6efd;
+        display: inline-block;
+    }
 
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <ToolingIcon />
-    </template>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vite.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>
-    +
-    <a href="https://github.com/vuejs/language-tools" target="_blank" rel="noopener"
-      >Vue - Official</a
-    >. If you need to test your components and web pages, check out
-    <a href="https://vitest.dev/" target="_blank" rel="noopener">Vitest</a>
-    and
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a>
-    /
-    <a href="https://playwright.dev/" target="_blank" rel="noopener">Playwright</a>.
-
-    <br />
-
-    More instructions are available in
-    <a href="javascript:void(0)" @click="openReadmeInEditor"><code>README.md</code></a
-    >.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <EcosystemIcon />
-    </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>
-    (our official Discord server), or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also follow the official
-    <a href="https://bsky.app/profile/vuejs.org" target="_blank" rel="noopener">@vuejs.org</a>
-    Bluesky account or the
-    <a href="https://x.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    X account for latest news in the Vue world.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <SupportIcon />
-    </template>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
-  </WelcomeItem>
-</template>
+    .pill {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(13, 110, 253, 0.12);
+        color: #0d6efd;
+        font-weight: 700;
+    }
+</style>
