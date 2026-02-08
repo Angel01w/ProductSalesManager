@@ -13,7 +13,7 @@
                     <span class="input-group-text">🔎</span>
                     <input v-model.trim="search" class="form-control" placeholder="Buscar por cliente o ID..." />
                 </div>
-                <button class="btn btn-outline-secondary" @click="load" :disabled="loading">
+                <button class="btn btn-outline-secondary" @click="loadAll" :disabled="loading">
                     <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
                     Refrescar
                 </button>
@@ -90,7 +90,10 @@
                         <div v-for="(it, idx) in form.items" :key="idx" class="border rounded-3 p-2 mb-2">
                             <div class="d-flex align-items-center justify-content-between mb-2">
                                 <div class="fw-semibold small">Item #{{ idx + 1 }}</div>
-                                <button class="btn btn-sm btn-outline-danger" type="button" @click="removeItem(idx)" :disabled="saving">
+                                <button class="btn btn-sm btn-outline-danger"
+                                        type="button"
+                                        @click="removeItem(idx)"
+                                        :disabled="saving">
                                     Quitar
                                 </button>
                             </div>
@@ -105,9 +108,7 @@
                                         {{ p.name }} — {{ money(p.price) }} (Stock: {{ p.stock }})
                                     </option>
                                 </select>
-                                <div class="invalid-feedback">
-                                    Producto requerido.
-                                </div>
+                                <div class="invalid-feedback">Producto requerido.</div>
                             </div>
 
                             <div>
@@ -117,9 +118,7 @@
                                        min="1"
                                        class="form-control"
                                        :class="{ 'is-invalid': itemError(idx, 'quantity') }" />
-                                <div class="invalid-feedback">
-                                    Cantidad debe ser mayor a 0.
-                                </div>
+                                <div class="invalid-feedback">Cantidad debe ser mayor a 0.</div>
                             </div>
                         </div>
 
@@ -208,67 +207,72 @@
                                         </td>
                                     </tr>
 
-                                    <tr v-else v-for="s in filtered" :key="s.id">
-                                        <td class="fw-semibold">{{ s.id }}</td>
+                                    <!-- ✅ key SOLO EN EL TEMPLATE -->
+                                    <template v-else v-for="s in filtered" :key="'row-' + s.id">
+                                        <!-- Row -->
+                                        <tr>
+                                            <td class="fw-semibold">{{ s.id }}</td>
 
-                                        <td>
-                                            <div class="d-flex align-items-center gap-2">
-                                                <span class="avatar">{{ initials(s.customer?.name) }}</span>
-                                                <div class="min-w-0">
-                                                    <div class="fw-semibold text-truncate">{{ s.customer?.name }}</div>
-                                                    <div class="text-muted small text-truncate">{{ s.customer?.email }}</div>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="avatar">{{ initials(s.customer?.name) }}</span>
+                                                    <div class="min-w-0">
+                                                        <div class="fw-semibold text-truncate">{{ s.customer?.name || "-" }}</div>
+                                                        <div class="text-muted small text-truncate">{{ s.customer?.email || "-" }}</div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
+                                            </td>
 
-                                        <td>{{ fmtDate(s.date) }}</td>
-                                        <td class="text-end fw-semibold">{{ money(s.total) }}</td>
+                                            <td>{{ fmtDate(s.date) }}</td>
+                                            <td class="text-end fw-semibold">{{ money(s.total) }}</td>
 
-                                        <td class="text-end">
-                                            <button class="btn btn-sm btn-outline-secondary me-2" @click="toggleDetails(s.id)">
-                                                {{ expandedId === s.id ? "Ocultar" : "Detalles" }}
-                                            </button>
-                                            <button class="btn btn-sm btn-outline-primary me-2" @click="editSale(s)" :disabled="saving">
-                                                Editar
-                                            </button>
-                                            <button class="btn btn-sm btn-outline-danger" @click="removeSale(s)" :disabled="saving">
-                                                Eliminar
-                                            </button>
-                                        </td>
-                                    </tr>
+                                            <td class="text-end">
+                                                <button class="btn btn-sm btn-outline-secondary me-2" @click="toggleDetails(s.id)">
+                                                    {{ expandedId === s.id ? "Ocultar" : "Detalles" }}
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-primary me-2" @click="editSale(s)" :disabled="saving">
+                                                    Editar
+                                                </button>
+                                                <button class="btn btn-sm btn-outline-danger" @click="removeSale(s)" :disabled="saving">
+                                                    Eliminar
+                                                </button>
+                                            </td>
+                                        </tr>
 
-                                    <!-- Details row -->
-                                    <tr v-if="expandedId === s.id" v-for="s in filtered" :key="'d-'+s.id" class="bg-light">
-                                        <td colspan="5" class="p-0">
-                                            <div class="p-3 border-top">
-                                                <div class="fw-semibold mb-2">Items</div>
-                                                <div class="table-responsive">
-                                                    <table class="table table-sm mb-0">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Producto</th>
-                                                                <th class="text-end">Cantidad</th>
-                                                                <th class="text-end">Precio</th>
-                                                                <th class="text-end">Total Línea</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr v-for="it in s.items" :key="it.id">
-                                                                <td>{{ it.productName }}</td>
-                                                                <td class="text-end">{{ it.quantity }}</td>
-                                                                <td class="text-end">{{ money(it.unitPrice) }}</td>
-                                                                <td class="text-end fw-semibold">{{ money(it.lineTotal) }}</td>
-                                                            </tr>
-                                                            <tr v-if="!s.items || s.items.length === 0">
-                                                                <td colspan="4" class="text-muted text-center">Sin items</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                        <!-- Details (sin key) -->
+                                        <tr v-if="expandedId === s.id" class="bg-light">
+                                            <td colspan="5" class="p-0">
+                                                <div class="p-3 border-top">
+                                                    <div class="fw-semibold mb-2">Items</div>
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-sm mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Producto</th>
+                                                                    <th class="text-end">Cantidad</th>
+                                                                    <th class="text-end">Precio</th>
+                                                                    <th class="text-end">Total Línea</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr v-for="it in (s.items || [])" :key="it.id ?? (it.productId + '-' + it.quantity)">
+                                                                    <td>{{ it.productName }}</td>
+                                                                    <td class="text-end">{{ it.quantity }}</td>
+                                                                    <td class="text-end">{{ money(it.unitPrice) }}</td>
+                                                                    <td class="text-end fw-semibold">{{ money(it.lineTotal) }}</td>
+                                                                </tr>
+
+                                                                <tr v-if="!s.items || s.items.length === 0">
+                                                                    <td colspan="4" class="text-muted text-center">Sin items</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-
+                                            </td>
+                                        </tr>
+                                    </template>
                                 </tbody>
                             </table>
                         </div>
@@ -281,7 +285,6 @@
             </div>
         </div>
 
-        <!-- Mini footer -->
         <div class="text-center text-muted small mt-3">
             © {{ new Date().getFullYear() }} ProductSalesManager
         </div>
@@ -292,11 +295,7 @@
     import { computed, onMounted, reactive, ref } from "vue";
     import axios from "axios";
 
-    /**
-     * ✅ Ajusta este puerto al que te abre Swagger
-     * Ej: https://localhost:7066
-     */
-    const API_BASE = "https://localhost:7066";
+    const API_BASE = "https://localhost:7276";
 
     const api = axios.create({
         baseURL: API_BASE,
@@ -318,7 +317,7 @@
     const form = reactive({
         id: null,
         customerId: 0,
-        date: "", // datetime-local (string)
+        date: "", // datetime-local
         items: [],
     });
 
@@ -333,14 +332,14 @@
     const filtered = computed(() => {
         const s = search.value.toLowerCase();
         if (!s) return sales.value;
+
         return sales.value.filter((x) => {
-            const byId = String(x.id).includes(s);
-            const byCustomer = (x.customer?.name || "").toLowerCase().includes(s);
+            const byId = String(x.id ?? "").includes(s);
+            const byCustomer = String(x.customer?.name ?? "").toLowerCase().includes(s);
             return byId || byCustomer;
         });
     });
 
-    // UI total (estimado) usando precios actuales (solo para mostrar)
     const calcTotal = computed(() => {
         let total = 0;
         for (const it of form.items) {
@@ -358,11 +357,12 @@
     }
 
     function normalizeApiError(e, fallback) {
-        return e?.response?.data?.message || fallback;
+        // muestra algo útil aunque el backend mande texto plano
+        return e?.response?.data?.message || e?.response?.data || e?.message || fallback;
     }
 
     function initials(name) {
-        const parts = (name || "").trim().split(/\s+/).filter(Boolean);
+        const parts = String(name || "").trim().split(/\s+/).filter(Boolean);
         if (parts.length === 0) return "V";
         const first = parts[0]?.[0] ?? "";
         const last = parts.length > 1 ? parts[parts.length - 1]?.[0] ?? "" : "";
@@ -382,7 +382,6 @@
     }
 
     function toIsoFromDatetimeLocal(v) {
-        // v: "2026-02-06T14:30"
         if (!v) return null;
         const d = new Date(v);
         if (Number.isNaN(d.getTime())) return null;
@@ -398,6 +397,7 @@
         errs.date = "";
         errs.items = "";
         expandedId.value = null;
+        if (form.items.length === 0) addItem();
     }
 
     function addItem() {
@@ -436,11 +436,10 @@
         return !errs.customerId && !errs.date && !errs.items;
     }
 
-    async function load() {
+    async function loadAll() {
         clearMsgs();
         loading.value = true;
         try {
-            // Cargar catálogos + ventas
             const [cRes, pRes, sRes] = await Promise.all([
                 api.get("/api/customer"),
                 api.get("/api/products"),
@@ -461,18 +460,18 @@
         expandedId.value = expandedId.value === id ? null : id;
     }
 
-    // Mapear sale del GET a request del PUT/POST
     function editSale(s) {
         clearMsgs();
         form.id = s.id;
-        form.customerId = s.customer?.id ?? 0;
+        form.customerId = s.customer?.id ?? s.customerId ?? 0;
 
-        // para datetime-local: "YYYY-MM-DDTHH:mm"
         if (s.date) {
             const d = new Date(s.date);
             if (!Number.isNaN(d.getTime())) {
                 const pad = (n) => String(n).padStart(2, "0");
-                form.date = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+                form.date = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(
+                    d.getMinutes()
+                )}`;
             } else {
                 form.date = "";
             }
@@ -485,6 +484,7 @@
             quantity: i.quantity,
         }));
 
+        if (form.items.length === 0) addItem();
         expandedId.value = s.id;
     }
 
@@ -512,7 +512,7 @@
             }
 
             resetForm();
-            await load();
+            await loadAll();
         } catch (e) {
             error.value = normalizeApiError(e, "Error guardando venta.");
         } finally {
@@ -530,7 +530,7 @@
             await api.delete(`/api/sales/${s.id}`);
             success.value = "Venta eliminada.";
             if (expandedId.value === s.id) expandedId.value = null;
-            await load();
+            await loadAll();
         } catch (e) {
             error.value = normalizeApiError(e, "Error eliminando venta.");
         } finally {
@@ -540,7 +540,7 @@
 
     onMounted(() => {
         if (form.items.length === 0) addItem();
-        load();
+        loadAll();
     });
 </script>
 

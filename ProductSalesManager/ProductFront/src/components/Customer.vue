@@ -94,6 +94,10 @@
 
                         <div class="text-muted small">
                             <div class="d-flex justify-content-between">
+                                <span>API Base</span>
+                                <span class="fw-semibold">{{ apiBase }}</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
                                 <span>Endpoint</span>
                                 <span class="fw-semibold">/api/customer</span>
                             </div>
@@ -194,159 +198,157 @@
 </template>
 
 <script setup>
-import { computed, onMounted, reactive, ref } from "vue";
-import axios from "axios";
+    import { computed, onMounted, reactive, ref } from "vue";
+    import axios from "axios";
 
-/**
- * ✅ Ajusta este puerto al que te abre Swagger
- * Ej: https://localhost:7066
- */
-const API_BASE = "https://localhost:7066";
+    // ✅ lee del .env
+	const apiBase = import.meta.env.VITE_API_BASE_URL || "https://localhost:7276";
 
-const api = axios.create({
-  baseURL: API_BASE,
-  headers: { "Content-Type": "application/json" },
-});
+    const api = axios.create({
+        baseURL: apiBase,
+        headers: { "Content-Type": "application/json" },
+    });
 
-const loading = ref(false);
-const saving = ref(false);
-const error = ref("");
-const success = ref("");
-const search = ref("");
+    const loading = ref(false);
+    const saving = ref(false);
+    const error = ref("");
+    const success = ref("");
+    const search = ref("");
 
-const customers = ref([]);
+    const customers = ref([]);
 
-const form = reactive({
-  id: null,
-  name: "",
-  email: "",
-  phone: "",
-});
+    const form = reactive({
+        id: null,
+        name: "",
+        email: "",
+        phone: "",
+    });
 
-const errs = reactive({
-  name: "",
-  email: "",
-});
+    const errs = reactive({
+        name: "",
+        email: "",
+    });
 
-const isEdit = computed(() => !!form.id);
+    const isEdit = computed(() => !!form.id);
 
-const filtered = computed(() => {
-  const s = search.value.toLowerCase();
-  if (!s) return customers.value;
+    const filtered = computed(() => {
+        const s = search.value.toLowerCase();
+        if (!s) return customers.value;
 
-  return customers.value.filter(
-    (x) =>
-      (x.name || "").toLowerCase().includes(s) ||
-      (x.email || "").toLowerCase().includes(s)
-  );
-});
+        return customers.value.filter(
+            (x) =>
+                (x.name || "").toLowerCase().includes(s) ||
+                (x.email || "").toLowerCase().includes(s)
+        );
+    });
 
-function clearMsgs() {
-  error.value = "";
-  success.value = "";
-}
-
-function initials(name) {
-  const parts = (name || "").trim().split(/\s+/).filter(Boolean);
-  if (parts.length === 0) return "U";
-  const first = parts[0]?.[0] ?? "";
-  const last = parts.length > 1 ? parts[parts.length - 1]?.[0] ?? "" : "";
-  return (first + last).toUpperCase();
-}
-
-function validate() {
-  errs.name = "";
-  errs.email = "";
-
-  if (!form.name) errs.name = "El nombre es requerido.";
-  if (!form.email) errs.email = "El email es requerido.";
-  else if (!/^\S+@\S+\.\S+$/.test(form.email)) errs.email = "Email inválido.";
-
-  return !errs.name && !errs.email;
-}
-
-function resetForm() {
-  form.id = null;
-  form.name = "";
-  form.email = "";
-  form.phone = "";
-  errs.name = "";
-  errs.email = "";
-}
-
-function normalizeApiError(e, fallback) {
-  // Tu backend responde { message: "..." } en 400/404/409
-  return e?.response?.data?.message || fallback;
-}
-
-async function load() {
-  clearMsgs();
-  loading.value = true;
-  try {
-    const { data } = await api.get("/api/customer");
-    customers.value = data ?? [];
-  } catch (e) {
-    error.value = normalizeApiError(e, "Error cargando clientes.");
-  } finally {
-    loading.value = false;
-  }
-}
-
-function edit(c) {
-  clearMsgs();
-  form.id = c.id;
-  form.name = c.name ?? "";
-  form.email = c.email ?? "";
-  form.phone = c.phone ?? "";
-}
-
-async function onSubmit() {
-  clearMsgs();
-  if (!validate()) return;
-
-  saving.value = true;
-  try {
-    const payload = {
-      name: form.name,
-      email: form.email,
-      phone: form.phone || null,
-    };
-
-    if (!isEdit.value) {
-      await api.post("/api/customer", payload);
-      success.value = "Cliente creado.";
-    } else {
-      await api.put(`/api/customer/${form.id}`, payload);
-      success.value = "Cliente actualizado.";
+    function clearMsgs() {
+        error.value = "";
+        success.value = "";
     }
 
-    resetForm();
-    await load();
-  } catch (e) {
-    error.value = normalizeApiError(e, "Error guardando cliente.");
-  } finally {
-    saving.value = false;
-  }
-}
+    function initials(name) {
+        const parts = (name || "").trim().split(/\s+/).filter(Boolean);
+        if (parts.length === 0) return "U";
+        const first = parts[0]?.[0] ?? "";
+        const last = parts.length > 1 ? parts[parts.length - 1]?.[0] ?? "" : "";
+        return (first + last).toUpperCase();
+    }
 
-async function remove(c) {
-  clearMsgs();
-  const ok = confirm(`¿Eliminar el cliente "${c.name}"?`);
-  if (!ok) return;
+    function validate() {
+        errs.name = "";
+        errs.email = "";
 
-  saving.value = true;
-  try {
-    await api.delete(`/api/customer/${c.id}`);
-    success.value = "Cliente eliminado.";
-    await load();
-  } catch (e) {
-    error.value = normalizeApiError(e, "Error eliminando cliente.");
-  } finally {
-    saving.value = false;
-  }
-}
+        if (!form.name) errs.name = "El nombre es requerido.";
+        if (!form.email) errs.email = "El email es requerido.";
+        else if (!/^\S+@\S+\.\S+$/.test(form.email)) errs.email = "Email inválido.";
 
-onMounted(load);
+        return !errs.name && !errs.email;
+    }
+
+    function resetForm() {
+        form.id = null;
+        form.name = "";
+        form.email = "";
+        form.phone = "";
+        errs.name = "";
+        errs.email = "";
+    }
+
+    function normalizeApiError(e, fallback) {
+        // Tu backend responde { message: "..." } en 400/404/409
+        // Si es CORS/SSL a veces no viene response, por eso fallback.
+        return e?.response?.data?.message || e?.message || fallback;
+    }
+
+    async function load() {
+        clearMsgs();
+        loading.value = true;
+        try {
+            const { data } = await api.get("/api/customer");
+            customers.value = data ?? [];
+        } catch (e) {
+            error.value = normalizeApiError(e, "Error cargando clientes.");
+        } finally {
+            loading.value = false;
+        }
+    }
+
+    function edit(c) {
+        clearMsgs();
+        form.id = c.id;
+        form.name = c.name ?? "";
+        form.email = c.email ?? "";
+        form.phone = c.phone ?? "";
+    }
+
+    async function onSubmit() {
+        clearMsgs();
+        if (!validate()) return;
+
+        saving.value = true;
+        try {
+            const payload = {
+                name: form.name,
+                email: form.email,
+                phone: form.phone || null,
+            };
+
+            if (!isEdit.value) {
+                await api.post("/api/customer", payload);
+                success.value = "Cliente creado.";
+            } else {
+                await api.put(`/api/customer/${form.id}`, payload);
+                success.value = "Cliente actualizado.";
+            }
+
+            resetForm();
+            await load();
+        } catch (e) {
+            error.value = normalizeApiError(e, "Error guardando cliente.");
+        } finally {
+            saving.value = false;
+        }
+    }
+
+    async function remove(c) {
+        clearMsgs();
+        const ok = confirm(`¿Eliminar el cliente "${c.name}"?`);
+        if (!ok) return;
+
+        saving.value = true;
+        try {
+            await api.delete(`/api/customer/${c.id}`);
+            success.value = "Cliente eliminado.";
+            await load();
+        } catch (e) {
+            error.value = normalizeApiError(e, "Error eliminando cliente.");
+        } finally {
+            saving.value = false;
+        }
+    }
+
+    onMounted(load);
 </script>
 
 <style scoped>

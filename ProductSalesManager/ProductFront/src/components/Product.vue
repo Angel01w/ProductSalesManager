@@ -214,13 +214,9 @@
 
 <script setup>
 import { computed, onMounted, reactive, ref } from "vue";
-import axios from "axios";
+    import axios from "axios";
 
-/**
- * ✅ Ajusta este puerto al que te abre Swagger
- * Ej: https://localhost:7066
- */
-const API_BASE = "https://localhost:7066";
+	const API_BASE = "https://localhost:7276";
 
 const api = axios.create({
   baseURL: API_BASE,

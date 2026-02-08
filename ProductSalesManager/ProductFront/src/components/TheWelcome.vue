@@ -19,7 +19,7 @@
             </div>
         </nav>
 
-        <div class="container py-4">
+        <div class="container-fluid py-4">
             <!-- Cards -->
             <div class="row g-3 mb-3">
                 <div class="col-12 col-md-3">
@@ -135,11 +135,11 @@
                         </div>
                     </div>
 
-                    <!-- Render -->
-                    <CustomersCrud v-if="tab === 'clientes'" />
-                    <ProductsCrud v-else-if="tab === 'productos'" />
-                    <SaleCrud v-else-if="tab === 'ventas'" />
-                    <SaleItemCrud v-else />
+                    <CustomersCrud v-if="tab === 'clientes'" :key="tab" />
+                    <ProductsCrud v-else-if="tab === 'productos'" :key="tab" />
+                    <SaleCrud v-else-if="tab === 'ventas'" :key="tab" />
+                    <SaleItemCrud v-else :key="tab" />
+
                 </div>
             </div>
 
@@ -151,15 +151,13 @@
 </template>
 
 <script setup>
-    import { ref } from "vue";
+    import { ref } from "vue"
+    import CustomersCrud from "../components/Customer.vue"
+    import ProductsCrud from "../components/Product.vue"
+    import SaleCrud from "../components/Sale.vue"
+    import SaleItemCrud from "../components/SaleItem.vue"
 
-    // ✅ Ajusta estos imports a los nombres reales de tus archivos:
-    import CustomersCrud from "../components/Customer.vue";
-    import ProductsCrud from "../components/Product.vue";
-    import SaleCrud from "../components/Sale.vue";
-    import SaleItemCrud from "../components/SaleItem.vue";
-
-    const tab = ref("clientes");
+    const tab = ref("clientes")
 </script>
 
 <style scoped>

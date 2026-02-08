@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\components\\thewelcome.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\components\\thewelcome.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\components\\saleitem.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\components\\saleitem.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\controllers\\saleitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:controllers\\saleitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\components\\sale.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\components\\sale.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\components\\product.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -43,16 +27,72 @@
       "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:controllers\\costumercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\services\\customers.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\services\\customers.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\components\\thewelcome.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\components\\thewelcome.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\assets\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\assets\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\services\\saleitems.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\services\\saleitems.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\services\\sales.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\services\\sales.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\services\\products.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\services\\products.service.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\services\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\services\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\controllers\\saleitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:controllers\\saleitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,116 +106,163 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SaleItem.vue",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\SaleItem.vue",
-              "RelativeDocumentMoniker": "ProductFront\\src\\components\\SaleItem.vue",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\SaleItem.vue",
-              "RelativeToolTip": "ProductFront\\src\\components\\SaleItem.vue",
-              "ViewState": "AgIAAKEBAAAAAAAAAAAswLwBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2026-02-08T07:58:18.815Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Sale.vue",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Sale.vue",
-              "RelativeDocumentMoniker": "ProductFront\\src\\components\\Sale.vue",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Sale.vue",
-              "RelativeToolTip": "ProductFront\\src\\components\\Sale.vue",
-              "ViewState": "AgIAABkCAAAAAAAAAAAswDQCAAAAAAAAAAAAAA==",
+              "Title": "Customer.vue",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Customer.vue",
+              "RelativeDocumentMoniker": "ProductFront\\src\\components\\Customer.vue",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Customer.vue",
+              "RelativeToolTip": "ProductFront\\src\\components\\Customer.vue",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAuwMwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2026-02-08T07:58:11.02Z"
+              "WhenOpened": "2026-02-08T00:20:20.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "CostumerController.cs",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\CostumerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CostumerController.cs",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\CostumerController.cs",
+              "RelativeToolTip": "Controllers\\CostumerController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:57:37.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Product.vue",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Product.vue",
               "RelativeDocumentMoniker": "ProductFront\\src\\components\\Product.vue",
               "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Product.vue",
               "RelativeToolTip": "ProductFront\\src\\components\\Product.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG0BAAAAAAAAAAAuwHQBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2026-02-08T07:23:36.028Z"
+              "WhenOpened": "2026-02-08T07:23:36.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\index.html",
-              "RelativeDocumentMoniker": "ProductFront\\index.html",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\index.html",
-              "RelativeToolTip": "ProductFront\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-02-08T02:28:37.591Z"
+              "Title": "Sale.vue",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Sale.vue",
+              "RelativeDocumentMoniker": "ProductFront\\src\\components\\Sale.vue",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Sale.vue",
+              "RelativeToolTip": "ProductFront\\src\\components\\Sale.vue",
+              "ViewState": "AgIAABkCAAAAAAAAAAAuwDQCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2026-02-08T07:58:11.02Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T19:11:41.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAYwGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwFcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:05:56.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SaleController.cs",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SaleController.cs",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleController.cs",
-              "RelativeToolTip": "Controllers\\SaleController.cs",
-              "ViewState": "AgIAABcBAAAAAAAAAAAkwDABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T13:55:29.623Z"
+              "WhenOpened": "2026-02-06T14:05:56.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SaleItem.vue",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\SaleItem.vue",
+              "RelativeDocumentMoniker": "ProductFront\\src\\components\\SaleItem.vue",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\SaleItem.vue",
+              "RelativeToolTip": "ProductFront\\src\\components\\SaleItem.vue",
+              "ViewState": "AgIAAKsBAAAAAAAAAAAuwLkBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2026-02-08T07:58:18.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "customers.service.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\customers.service.js",
+              "RelativeDocumentMoniker": "ProductFront\\src\\Services\\customers.service.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\customers.service.js",
+              "RelativeToolTip": "ProductFront\\src\\Services\\customers.service.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:09:23.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TheWelcome.vue",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\TheWelcome.vue",
               "RelativeDocumentMoniker": "ProductFront\\src\\components\\TheWelcome.vue",
               "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\TheWelcome.vue",
               "RelativeToolTip": "ProductFront\\src\\components\\TheWelcome.vue",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAAAKwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2026-02-08T00:35:37.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SaleItemController.cs",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleItemController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SaleItemController.cs",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleItemController.cs",
-              "RelativeToolTip": "Controllers\\SaleItemController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAYwIEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:06:27.473Z"
+              "DocumentIndex": 9,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\assets\\main.css",
+              "RelativeDocumentMoniker": "ProductFront\\src\\assets\\main.css",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\assets\\main.css",
+              "RelativeToolTip": "ProductFront\\src\\assets\\main.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-08T17:23:26.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Customer.vue",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Customer.vue",
-              "RelativeDocumentMoniker": "ProductFront\\src\\components\\Customer.vue",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\Customer.vue",
-              "RelativeToolTip": "ProductFront\\src\\components\\Customer.vue",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowHEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2026-02-08T00:20:20.819Z"
+              "DocumentIndex": 11,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\main.js",
+              "RelativeDocumentMoniker": "ProductFront\\src\\main.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\main.js",
+              "RelativeToolTip": "ProductFront\\src\\main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:01:59.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\package.json",
+              "RelativeDocumentMoniker": "ProductFront\\package.json",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\package.json",
+              "RelativeToolTip": "ProductFront\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-08T17:14:54.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -183,19 +270,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-06T19:11:39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T19:11:41.545Z"
+              "WhenOpened": "2026-02-06T19:11:39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -205,21 +281,127 @@
               "RelativeDocumentMoniker": "ProductFront\\src\\App.vue",
               "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\App.vue",
               "RelativeToolTip": "ProductFront\\src\\App.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2026-02-08T00:28:27.985Z"
+              "WhenOpened": "2026-02-08T00:28:27.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CostumerController.cs",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\CostumerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CostumerController.cs",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\CostumerController.cs",
-              "RelativeToolTip": "Controllers\\CostumerController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwGwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\index.html",
+              "RelativeDocumentMoniker": "ProductFront\\index.html",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\index.html",
+              "RelativeToolTip": "ProductFront\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-08T02:28:37.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "saleItems.service.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\saleItems.service.js",
+              "RelativeDocumentMoniker": "ProductFront\\src\\Services\\saleItems.service.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\saleItems.service.js",
+              "RelativeToolTip": "ProductFront\\src\\Services\\saleItems.service.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:10:38.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\vite.config.js",
+              "RelativeDocumentMoniker": "ProductFront\\vite.config.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\vite.config.js",
+              "RelativeToolTip": "ProductFront\\vite.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:02:46.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T13:57:37.605Z"
+              "WhenOpened": "2026-02-08T17:07:44.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "api.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\api.js",
+              "RelativeDocumentMoniker": "ProductFront\\src\\Services\\api.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\api.js",
+              "RelativeToolTip": "ProductFront\\src\\Services\\api.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:08:39.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "products.service.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\products.service.js",
+              "RelativeDocumentMoniker": "ProductFront\\src\\Services\\products.service.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\products.service.js",
+              "RelativeToolTip": "ProductFront\\src\\Services\\products.service.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:09:43.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "sales.service.js",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\sales.service.js",
+              "RelativeDocumentMoniker": "ProductFront\\src\\Services\\sales.service.js",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\Services\\sales.service.js",
+              "RelativeToolTip": "ProductFront\\src\\Services\\sales.service.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-08T17:10:23.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SaleController.cs",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SaleController.cs",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleController.cs",
+              "RelativeToolTip": "Controllers\\SaleController.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAAAkwDABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T13:55:29.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SaleItemController.cs",
+              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SaleItemController.cs",
+              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\Controllers\\SaleItemController.cs",
+              "RelativeToolTip": "Controllers\\SaleItemController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAYwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T14:06:27.473Z",
+              "EditorCaption": ""
             }
           ]
         }
