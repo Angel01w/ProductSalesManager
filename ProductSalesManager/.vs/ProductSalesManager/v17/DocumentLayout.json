@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|c:\\users\\penaa\\source\\repos\\productsalesmanager\\productfront\\src\\components\\thewelcome.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03E5C0CE-4C12-48DD-9913-4A91112BB8B9}|ProductSalesManager.csproj|solutionrelative:productfront\\src\\components\\thewelcome.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TheWelcome.vue",
-              "DocumentMoniker": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\TheWelcome.vue",
-              "RelativeDocumentMoniker": "ProductFront\\src\\components\\TheWelcome.vue",
-              "ToolTip": "C:\\Users\\penaa\\source\\repos\\ProductSalesManager\\ProductFront\\src\\components\\TheWelcome.vue",
-              "RelativeToolTip": "ProductFront\\src\\components\\TheWelcome.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2026-02-09T13:17:32.707Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
