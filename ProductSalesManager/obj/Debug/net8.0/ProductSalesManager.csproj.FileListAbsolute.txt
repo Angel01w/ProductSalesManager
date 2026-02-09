@@ -130,7 +130,6 @@ C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\staticwebassets
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\ProductS.01D24B5F.Up2Date
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\ProductSalesManager.dll
 C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\refint\ProductSalesManager.dll
@@ -142,3 +141,6 @@ C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\package.json
 C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\ProductFront\jsconfig.json
 C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\ProductFront\package-lock.json
 C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\ProductFront\package.json
+C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\penaa\source\repos\ProductSalesManager\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\penaa\source\repos\ProductSalesManager\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

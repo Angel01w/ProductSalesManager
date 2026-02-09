@@ -12,9 +12,19 @@
                     </div>
                 </div>
 
+                <!-- ✅ DERECHA: badges + botones -->
                 <div class="d-flex align-items-center gap-2">
                     <span class="badge text-bg-primary">Vue 3</span>
                     <span class="badge text-bg-dark">.NET API</span>
+
+                    <div class="vr mx-2"></div>
+
+                    <router-link class="btn btn-sm btn-primary" to="/login">
+                        Iniciar sesión
+                    </router-link>
+                    <router-link class="btn btn-sm btn-outline-primary" to="/register">
+                        Registrarse
+                    </router-link>
                 </div>
             </div>
         </nav>
@@ -139,7 +149,6 @@
                     <ProductsCrud v-else-if="tab === 'productos'" :key="tab" />
                     <SaleCrud v-else-if="tab === 'ventas'" :key="tab" />
                     <SaleItemCrud v-else :key="tab" />
-
                 </div>
             </div>
 
@@ -151,13 +160,13 @@
 </template>
 
 <script setup>
-    import { ref } from "vue"
-    import CustomersCrud from "../components/Customer.vue"
-    import ProductsCrud from "../components/Product.vue"
-    import SaleCrud from "../components/Sale.vue"
-    import SaleItemCrud from "../components/SaleItem.vue"
+    import { ref } from "vue";
+    import CustomersCrud from "../components/Customer.vue";
+    import ProductsCrud from "../components/Product.vue";
+    import SaleCrud from "../components/Sale.vue";
+    import SaleItemCrud from "../components/SaleItem.vue";
 
-    const tab = ref("clientes")
+    const tab = ref("clientes");
 </script>
 
 <style scoped>

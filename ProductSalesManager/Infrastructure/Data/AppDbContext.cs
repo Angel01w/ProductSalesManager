@@ -11,6 +11,7 @@ public class AppDbContext : DbContext
     public DbSet<Customer> Customers => Set<Customer>();
     public DbSet<Sale> Sales => Set<Sale>();
     public DbSet<SaleItem> SaleItems => Set<SaleItem>();
+    public DbSet<User> Users => Set<User>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -29,6 +30,9 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Customer>()
             .HasIndex(c => c.Email)
             .IsUnique();
+
+        modelBuilder.Entity<User>() // ✅
+            .HasIndex(u => u.Email)
+            .IsUnique();
     }
 }
-

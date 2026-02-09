@@ -12,7 +12,7 @@
                     <span class="input-group-text">🔎</span>
                     <input v-model.trim="search" class="form-control" placeholder="Buscar por nombre o email..." />
                 </div>
-                <button class="btn btn-outline-secondary" @click="load" :disabled="loading">
+                <button class="btn btn-outline-secondary" @click="load" :disabled="saving">
                     <span v-if="loading" class="spinner-border spinner-border-sm me-2"></span>
                     Refrescar
                 </button>

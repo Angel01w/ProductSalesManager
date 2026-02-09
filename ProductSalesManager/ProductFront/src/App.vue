@@ -1,13 +1,11 @@
 <template>
-    <TheWelcome />
+    <router-view />
 </template>
 
 <script setup>
-    import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <style>
-   
     html, body, #app {
         height: 100%;
         margin: 0;

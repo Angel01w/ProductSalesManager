@@ -3,32 +3,36 @@ using ProductSalesManager.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ✅ CORS (permitir frontend Vue)
+// CORS para Vue
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowVue", policy =>
-        policy.WithOrigins(
+    options.AddPolicy("AllowVue",
+        policy => policy
+            .WithOrigins(
                 "http://localhost:5173",
-                "https://localhost:5173"
+                "https://localhost:5173",
+                "http://localhost:5174",
+                "https://localhost:5174",
+                "http://localhost:5175",
+                "https://localhost:5175",
+                "http://localhost:5176",
+                "https://localhost:5176"
             )
             .AllowAnyHeader()
             .AllowAnyMethod()
-            .AllowCredentials()
     );
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -37,7 +41,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ✅ usar CORS antes de controllers
 app.UseCors("AllowVue");
 
 app.UseAuthorization();
