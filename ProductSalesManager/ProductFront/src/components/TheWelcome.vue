@@ -19,12 +19,6 @@
 
                     <div class="vr mx-2"></div>
 
-                    <router-link class="btn btn-sm btn-primary" to="/login">
-                        Iniciar sesión
-                    </router-link>
-                    <router-link class="btn btn-sm btn-outline-primary" to="/register">
-                        Registrarse
-                    </router-link>
                 </div>
             </div>
         </nav>
