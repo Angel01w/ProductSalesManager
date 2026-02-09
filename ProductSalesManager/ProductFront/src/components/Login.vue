@@ -156,7 +156,7 @@
 
            
 
-            router.push("/"); 
+			router.replace("/app"); 
         } catch (e) {
             error.value = e?.response?.data?.message || e?.message || "Error en login.";
         } finally {
